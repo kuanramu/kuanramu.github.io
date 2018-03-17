@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]> <html class="ie8">    <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html><!--<![endif]-->
+    <head>
+      <!-- <base href="http://localhost:3000/nuansa/app/">-->
+        <base href="http://nuansa-app.co/">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="apple-mobile-web-app-capable" content="yes">
+
+      <link rel="apple-touch-icon" sizes="57x57" href="http://nuansa-app.co/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="http://nuansa-app.co/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="http://nuansa-app.co/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="http://nuansa-app.co/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="http://nuansa-app.co/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="http://nuansa-app.co/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="http://nuansa-app.co/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="http://nuansa-app.co/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="http://nuansa-app.co/apple-icon-180x180.png">
+
+      <link rel="icon" type="image/png" sizes="192x192"  href="http://nuansa-app.co/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="http://nuansa-app.co/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="http://nuansa-app.co/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="http://nuansa-app.co/favicon-16x16.png">
+
+      <link rel="manifest" href="http://nuansa-app.co/manifest.json">
+
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="http://nuansa-app.co/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+
+      <script type="text/javascript" src="//fast.fonts.net/jsapi/50622a85-3df2-45d0-8302-6ebf6cb4c9de.js"></script>
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <script src="assets/js/libs.min.js"></script>
+      <title>Nuansa App</title>
+      <meta name="description" content="Nuansa App, an inspiration tool for creative minds.">
+    </head>
+
+    <body class="preload" id="mainBody">
+      <div id="mainLoader">
+        <div class="loader-logo">
+          <svg version="1.1" id="Twitter_alt" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+               style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <switch>
+              <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+                <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+                </i:pgfRef>
+              </foreignObject>
+              <g i:extraneous="self">
+                <g>
+                  <rect x="226.4" y="172.9" width="59.6" height="166.4"/>
+                  <path d="M256.2,0C114.8,0,0.1,114.7,0.1,256.1c0,141.4,114.7,256.1,256.1,256.1s256.1-114.7,256.1-256.1
+                    C512.3,114.7,397.6,0,256.2,0z M315.5,368.8H196.9V143.4h118.6V368.8z"/>
+                </g>
+              </g>
+            </switch>
+          </svg>
+        </div>
+        <div id="preload-stuff">
+          <img src="assets/img/icos/ico-apple-download.png"/>
+          <img src="assets/img/svg-icons/facebook.svg"/>
+          <img src="assets/img/svg-icons/instagram.svg"/>
+          <img src="assets/img/phone_screens/img1.jpg"/>
+          <img src="assets/img/phone_screens/img2.jpg"/>
+          <img src="assets/img/phone_screens/img3.jpg"/>
+          <img src="assets/img/phone_screens/img4.jpg"/>
+          <img src="assets/img/phone_screens/img5.jpg"/>
+          <img src="assets/img/phone_screens/img6.jpg"/>
+          <img src="assets/img/phone_screens/img7.jpg"/>
+          <img src="assets/img/phone_screens/img8.jpg"/>
+          <img src="assets/img/phone_screens/img9.jpg"/>
+          <img src="assets/img/phone_screens/img1.jpg"/>
+          <img src="assets/img/phone_screens/img11.jpg"/>
+
+          <img src="assets/img/about-img/nature01.jpg"/>
+          <img src="assets/img/about-img/nature02.jpg"/>
+          <img src="assets/img/about-img/nature03.jpg"/>
+          <img src="assets/img/about-img/nature04.jpg"/>
+          <img src="assets/img/about-img/nature05.jpg"/>
+          <img src="assets/img/about-img/nature06.jpg"/>
+          <img src="assets/img/about-img/nature07.jpg"/>
+          <img src="assets/img/about-img/nature08.jpg"/>
+          <img src="assets/img/about-img/nature09.jpg"/>
+
+          <img src="assets/img/about-img/nuansa03.jpg"/>
+          <img src="assets/img/about-img/nature10.jpg"/>
+          <img src="assets/img/about-img/nuansa04.jpg"/>
+          <img src="assets/img/about-img/nuansa01.jpg"/>
+          <img src="assets/img/about-img/nuansa02.jpg"/>
+
+          <img src="assets/img/presskit-img/01fullpresskit.jpg"/>
+          <img src="assets/img/presskit-img/02reviewersguide.jpg"/>
+          <img src="assets/img/presskit-img/03video.jpg"/>
+          <img src="assets/img/presskit-img/04logo.jpg"/>
+          <img src="assets/img/presskit-img/06fullidentity.jpg"/>
+          <img src="assets/img/presskit-img/05icons.jpg"/>
+
+          <img src="assets/img/presskit-img/07appstorescreenshots.jpg"/>
+          <img src="assets/img/presskit-img/17renderset.jpg"/>
+          <img src="assets/img/presskit-img/13photo4.jpg"/>
+          <img src="assets/img/presskit-img/15photo6.jpg"/>
+          <img src="assets/img/presskit-img/16photo7.jpg"/>
+          <img src="assets/img/presskit-img/19render2.jpg"/>
+          <img src="assets/img/presskit-img/22render5.jpg"/>
+          <img src="assets/img/presskit-img/10photo1b.jpg"/>
+          <img src="assets/img/presskit-img/11photo2.jpg"/>
+          <img src="assets/img/presskit-img/14photo5.jpg"/>
+          <img src="assets/img/presskit-img/20render3.jpg"/>
+          <img src="assets/img/presskit-img/21render4.jpg"/>
+          <img src="assets/img/presskit-img/08screenshots.jpg"/>
+          <img src="assets/img/presskit-img/12photo3.jpg"/>
+          <img src="assets/img/presskit-img/18render1b.jpg"/>
+          <img src="assets/img/presskit-img/09photoset.jpg"/>
+          <img src="assets/img/presskit-img/23render6.jpg"/>
+        </div>
+      </div>
+
+    <div id="mainApp" class="mainApp preload" data-step="1" data-colval="color1">
+         <svg version="1.1" id="Twitter_alt" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+               style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <switch>
+              <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+                <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+                </i:pgfRef>
+              </foreignObject>
+              <g i:extraneous="self">
+                <g>
+                  <rect x="226.4" y="172.9" width="59.6" height="166.4"/>
+                  <path d="M256.2,0C114.8,0,0.1,114.7,0.1,256.1c0,141.4,114.7,256.1,256.1,256.1s256.1-114.7,256.1-256.1
+                    C512.3,114.7,397.6,0,256.2,0z M315.5,368.8H196.9V143.4h118.6V368.8z"/>
+                </g>
+              </g>
+            </switch>
+          </svg>
+    </div>
+
+    <script type="text/template" id="template_mainApp">
+        <div class="menu-mobile">
+         <svg version="1.1" id="Twitter_alt" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+               style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <switch>
+              <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+                <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+                </i:pgfRef>
+              </foreignObject>
+              <g i:extraneous="self">
+                <g>
+                  <rect x="226.4" y="172.9" width="59.6" height="166.4"/>
+                  <path d="M256.2,0C114.8,0,0.1,114.7,0.1,256.1c0,141.4,114.7,256.1,256.1,256.1s256.1-114.7,256.1-256.1
+                    C512.3,114.7,397.6,0,256.2,0z M315.5,368.8H196.9V143.4h118.6V368.8z"/>
+                </g>
+              </g>
+            </switch>
+
+          </svg>
+            <div class="menu-mobile-item item-nuansa">Nuansa</div><div class="sep">&nbsp;/&nbsp;</div>
+            <div class="menu-mobile-item item-about">About</div><div class="sep">&nbsp;/&nbsp;</div>
+            <div class="menu-mobile-item item-presskit">Presskit</div>
+
+        </div>
+       <div class="header">
+        <div class="header-left">
+
+          <svg version="1.1" id="Twitter_alt" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+               style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <switch>
+              <foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+                <i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+                </i:pgfRef>
+              </foreignObject>
+              <g i:extraneous="self">
+                <g>
+                  <rect x="226.4" y="172.9" width="59.6" height="166.4"/>
+                  <path d="M256.2,0C114.8,0,0.1,114.7,0.1,256.1c0,141.4,114.7,256.1,256.1,256.1s256.1-114.7,256.1-256.1
+                    C512.3,114.7,397.6,0,256.2,0z M315.5,368.8H196.9V143.4h118.6V368.8z"/>
+                </g>
+              </g>
+            </switch>
+          </svg>
+          <div class="header-title"></div>
+        </div>
+        <div class="header-right">
+        <a href="https://itunes.apple.com/us/app/nuansa-inspiration-tool-for/id1155923441?mt=8" target="_blank">
+          Download Now
+          </a>
+        </div>
+      </div>
+
+       <div id="mainPart">
+      </div>
+    </script>
+
+    <script type="text/template" id="template_homeView">
+
+      <div class="screen-txt screen-txt1">
+
+          Introducing <span class="lighter">Nuansa</span>,<br>
+
+          an <span class="lighter">inspiration tool</span><br>for creative minds
+
+        </div>
+
+        <div class="screen-txt  screen-txt2">
+
+          Be inspired by curated<br>
+
+         <span class="lighter">nature photography</span> and<br>
+
+          hand-picked <span class="lighter">color palettes</span>
+
+        </div>
+
+        <div class="screen-txt  screen-txt2-mobile">
+
+          Be inspired by curated<br>
+
+         <span class="lighter">nature photography</span> and<br>
+
+          hand-picked <span class="lighter">color palettes</span>
+
+        </div>
+
+        <div class="screen-txt  screen-txt3">
+
+          Be creative with <span class="lighter">color, font,</span><br>
+
+          <span class="lighter">design</span> and define bases<br>
+
+          of <span class="lighter">visual identity </span>principles
+
+        </div>
+
+        <div class="screen-txt  screen-txt4">
+
+          Be creative with libraries<br>
+
+          of the <span class="lighter">most creative typefaces</span>,<br><span class="lighter">textures and patterns</span>
+
+        </div>
+
+        <div class="screen-txt  screen-txt5">
+
+          <span class="lighter">Export the visual identity</span><br>
+
+          principles and push the<br>
+
+          boundaries of <span class="lighter">creativity</span>.
+
+        </div>
+
+        <div class="menu-links">
+          <div class="menu-links-item about">About</div>
+          <div class="menu-links-item presskit">Presskit</div>
+        </div>
+
+        <div class="menu-icos">
+          <div class="menu-icos-item twitter">
+          <a href="https://www.facebook.com/NuansaApp/" target="_blank"><img src="assets/img/svg-icons/facebook.svg" /></a>
+          </div>
+          <div class="menu-icos-item instagram">
+          <a href="http://instagram.com/NuansaApp" target="_blank"><img src="assets/img/svg-icons/instagram.svg" /></a>
+          </div>
+        </div>
+        <div class="screen">
+        <div class="screen-img screen-img1">
+          <img src="assets/img/phone_screens/img1.jpg" />
+        </div>
+
+        <div class="screen-img screen-img2">
+          <img src="assets/img/phone_screens/img2.jpg" />
+        </div>
+
+        <div class="screen-img screen-img3">
+          <img src="assets/img/phone_screens/img3.jpg" />
+        </div>
+
+        <div class="screen-img screen-img4">
+          <img src="assets/img/phone_screens/img4.jpg" />
+        </div>
+
+        <div class="screen-img screen-img5">
+          <img src="assets/img/phone_screens/img5.jpg" />
+        </div>
+
+        <div class="screen-img screen-img6">
+          <img src="assets/img/phone_screens/img6.jpg" />
+        </div>
+
+        <div class="screen-img screen-img7">
+          <img src="assets/img/phone_screens/img7.jpg" />
+        </div>
+
+        <div class="screen-img screen-img8">
+          <img src="assets/img/phone_screens/img8.jpg" />
+        </div>
+
+        <div class="screen-img screen-img9">
+          <img src="assets/img/phone_screens/img9.jpg" />
+        </div>
+
+        <div class="screen-img screen-img10">
+          <img src="assets/img/phone_screens/img10.jpg" />
+        </div>
+
+        <div class="screen-img screen-img11">
+          <img src="assets/img/phone_screens/img11.jpg" />
+        </div>
+      </div>
+
+      <div class="visual-nav">
+
+        <div class="visual-nav-col" data-nav="1"></div>
+
+        <div class="visual-nav-col" data-nav="2"></div>
+
+        <div class="visual-nav-col" data-nav="3"></div>
+
+        <div class="visual-nav-col" data-nav="4"></div>
+
+        <div class="visual-nav-col" data-nav="5"></div>
+
+        <div class="visual-nav-col" data-nav="6"></div>
+
+        <div class="visual-nav-col mobile" data-nav="7"></div>
+
+        <div class="visual-nav-col mobile" data-nav="8"></div>
+
+        <div class="visual-nav-col mobile" data-nav="9"></div>
+
+        <div class="visual-nav-col mobile" data-nav="10"></div>
+
+        <div class="visual-nav-col mobile" data-nav="11"></div>
+
+        <!-- <div class="visual-nav-col mobiles" data-nav="12"></div>-->
+
+        <div class="visual-nav-col-cursor"></div>
+
+      </div>
+
+        <div class="fleche-left">
+
+          <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32.1 21.8" enable-background="new 0 0 32.1 21.8" xml:space="preserve"> <path id="Arrow_Back" fill="#434343" d="M1,11.8l27.8,0l-8.3,8.3c-0.4,0.4-0.4,1,0,1.4c0.4,0.4,1,0.4,1.4,0l9.9-9.9c0.4-0.4,0.4-1,0-1.4l-9.9-9.9c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l8.3,8.1L1,9.8c-0.6,0-1,0.4-1,1C0,11.4,0.4,11.8,1,11.8z"/></svg>
+
+        </div>
+
+        <div class="fleche-right">
+
+          <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32.1 21.8" enable-background="new 0 0 32.1 21.8" xml:space="preserve"> <path id="Arrow_Back" fill="#434343" d="M1,11.8l27.8,0l-8.3,8.3c-0.4,0.4-0.4,1,0,1.4c0.4,0.4,1,0.4,1.4,0l9.9-9.9c0.4-0.4,0.4-1,0-1.4l-9.9-9.9c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l8.3,8.1L1,9.8c-0.6,0-1,0.4-1,1C0,11.4,0.4,11.8,1,11.8z"/></svg>
+
+        </div>
+        
+  </script>
+    <script type="text/template" id="template_aboutView">
+    
+      <div class="about-content">
+      <div class="line line1">
+        <div class="bloc">
+          <img src="assets/img/about-img/nature01.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature02.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature03.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature04.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature05.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature06.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature07.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature08.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature09.jpg" />
+        </div>
+        <div class="bloc">
+          <img src="assets/img/about-img/nature10.jpg" />
+        </div>
+      </div>
+      <div class="line line2">
+      Nature is an endless source of inspiration.<br>
+Any design work can find roots in colors, 
+atmospheres, textures, patterns from nature.
+      </div>
+      <div class="line line3">
+
+      <div class="bloc-left">
+          <img src="assets/img/about-img/nuansa01.jpg" />
+        </div>
+        <div class="bloc-right">
+          <img src="assets/img/about-img/nuansa02.jpg" />
+          <img src="assets/img/about-img/nuansa03.jpg" />
+          <img src="assets/img/about-img/nuansa04.jpg" />
+        </div>
+
+
+      </div>
+      <div class="line line4">
+      Nuansa was created and designed by 
+<a href="http://www.julienderreveaux.com/" target="_blank">Julien&nbsp;Derreveaux</a> and developed by <a href="http://genesio.fr/" target="_blank">Genesio</a>. 
+This website was coded by <a href="http://aliquidstudio.com/ben/" target="_blank">Ben&nbsp;Grillet</a>.<br><br>
+Follow Nuansa on <a href="https://www.facebook.com/NuansaApp/" target="_blank">Facebook</a> & <a href="https://www.instagram.com/NuansaApp/" target="_blank">Instagram</a>.<br>
+ <span class="small-txt">
+ For each curated photography, the appropriate credit is documented and the original source is made available. If you are the owner of an image that is posted
+on Nuansa and wish it to be removed, just <a href="mailto:hello@nuansa-app.co" target="_blank">contact us</a> and let us know and we’ll gladly respect your wishes.
+ 
+ </span>
+      </div>
+      
+      <div class="menu-links">
+      <div class="menu-links-item about">About</div>
+      <div class="menu-links-item presskit">Presskit</div>
+    </div>
+
+    <div class="menu-icos">
+      <div class="menu-icos-item twitter">
+      <a href="https://www.facebook.com/NuansaApp/" target="_blank"><img src="assets/img/svg-icons/facebook.svg" /></a>
+      </div>
+      <div class="menu-icos-item instagram">
+      <a href="http://instagram.com/NuansaApp" target="_blank"><img src="assets/img/svg-icons/instagram.svg" /></a>
+      </div>
+    </div>
+      </div>
+  </script>
+
+
+
+  <script type="text/template" id="template_pressekitView">
+
+        <div class="presskit-content">
+        <div class="line line1">
+      Here are some material if you’re looking
+to write about Nuansa.
+      </div>
+      <div class="line line2">
+        <div class="bloc">
+          <a href="presskit-nuansa.zip" target="_blank">
+          <img src="assets/img/presskit-img/01fullpresskit.jpg" />
+          <div class="label">Full Presskit - ZIP</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/nuansa-reviewers-guide-v01.pdf" target="_blank">
+          <img src="assets/img/presskit-img/02reviewersguide.jpg" />
+          <div class="label">Reviewer’s Guide - PDF</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="#" target="_blank">
+          <img src="assets/img/presskit-img/03video.jpg" />
+          <div class="label black">Animation - squared video</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/identity-nuansa/logo-nuansa-black.eps" target="_blank">
+          <img src="assets/img/presskit-img/04logo.jpg" />
+          <div class="label black">Logos - EPS</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/identity-nuansa/icon-nuansa-black.eps" target="_blank">
+          <img src="assets/img/presskit-img/05icons.jpg" />
+          <div class="label black">App Icons - EPS</div>
+          </a>
+        </div>
+        <div class="bloc">
+        <a href="presskit/identity-nuansa.zip" target="_blank">
+          <img src="assets/img/presskit-img/06fullidentity.jpg" />
+          <div class="label">Full Identity - ZIP</div>
+          </a>
+        </div><div class="bloc fullbloc">
+        <a href="presskit/appstore-screenshots-nuansa.zip" target="_blank">
+          <img src="assets/img/presskit-img/07appstorescreenshots.jpg" />
+          <div class="label">AppStore Screenshots - ZIP (JPEG set)</div>
+          </a>
+        </div><div class="bloc fullbloc">
+        <a href="presskit/fullscreen-app-screenshots.zip" target="_blank">
+          <img src="assets/img/presskit-img/08screenshots.jpg" />
+          <div class="label black">Fullscreen Screenshots - ZIP (PNG set)</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/photography-nuansa.zip" target="_blank">
+          <img src="assets/img/presskit-img/09photoset.jpg"  /></a>
+          <div class="label">Photography Full Set - ZIP</div>
+          
+        </div><div class="bloc triple">
+        <a href="presskit/photography/nuansa-photography-01.jpg" target="_blank">
+          <img src="assets/img/presskit-img/10photo1b.jpg" />
+          <div class="label">Photography #1 - JPEG</div>
+          </a>
+        </div>
+        <div class="bloc">
+        <a href="presskit/photography/nuansa-photography-02.jpg" target="_blank">
+          <img src="assets/img/presskit-img/11photo2.jpg" />
+          <div class="label">Photography #2 - JPEG</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/photography/nuansa-photography-03.jpg" target="_blank">
+          <img src="assets/img/presskit-img/12photo3.jpg" />
+          <div class="label black">Photography #3 - JPEG</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/photography/nuansa-photography-04.jpg" target="_blank">
+          <img src="assets/img/presskit-img/13photo4.jpg" />
+          <div class="label">Photography #4 - JPEG</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/photography/nuansa-photography-05.jpg" target="_blank">
+          <img src="assets/img/presskit-img/14photo5.jpg" />
+          <div class="label black">Photography #5 - JPEG</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/photography/nuansa-photography-06.jpg" target="_blank">
+          <img src="assets/img/presskit-img/15photo6.jpg" />
+          <div class="label black">Photography #6 - JPEG</div>
+          </a>
+        </div>
+        <div class="bloc">
+        <a href="presskit/photography/nuansa-photography-07.jpg" target="_blank">
+          <img src="assets/img/presskit-img/16photo7.jpg" />
+          <div class="label black">Photography #7 - JPEG</div>
+          </a>
+        </div><div class="bloc double">
+        <a href="presskit/renders-nuansa.zip" target="_blank">
+          <img src="assets/img/presskit-img/17renderset.jpg" />
+          <div class="label">Renders Full Set - ZIP</div>
+          </a>
+        </div><div class="bloc triple">
+       <a href="presskit/renders/nuansa-render-overview.jpg" target="_blank">
+          <img src="assets/img/presskit-img/18render1b.jpg" />
+          <div class="label">Render #1 - JPEG</div>
+      </a>
+        </div>
+
+        <div class="bloc">
+       <a href="presskit/renders/nuansa-render-photography.jpg" target="_blank">
+          <img src="assets/img/presskit-img/19render2.jpg" />
+          <div class="label">Render #2 - JPEG</div>
+       </a>
+        </div>
+        <div class="bloc">
+        <a href="presskit/renders/nuansa-render-colors.jpg" target="_blank">
+          <img src="assets/img/presskit-img/20render3.jpg" />
+          <div class="label">Render #3 - JPEG</div>
+        </a>
+        </div>
+        <div class="bloc">
+       <a href="presskit/renders/nuansa-render-fonts.jpg" target="_blank">
+          <img src="assets/img/presskit-img/21render4.jpg" />
+          <div class="label">Render #4 - JPEG</div>
+          </a>
+        </div>
+        <div class="bloc">
+        <a href="presskit/renders/nuansa-render-texture.jpg" target="_blank">
+          <img src="assets/img/presskit-img/22render5.jpg" />
+          <div class="label">Render #5 - JPEG</div>
+          </a>
+        </div>
+        <div class="bloc">
+       <a href="presskit/renders/nuansa-render-export-example.jpg" target="_blank">
+          <img src="assets/img/presskit-img/23render6.jpg" />
+          <div class="label">Render #6 - JPEG</div>
+          </a>
+        </div>
+
+      </div>
+       <div class="line line3">
+      Thank you for your interest in Nuansa!<br>
+If you have any questions, please don’t hesitate
+to contact us via <a href="mailto:Hello@nuansa-app.co">hello@nuansa-app.co</a>.
+      </div>
+
+      <div class="menu-links">
+      <div class="menu-links-item about">About</div>
+      <div class="menu-links-item presskit">Presskit</div>
+    </div>
+
+    <div class="menu-icos">
+      <div class="menu-icos-item twitter">
+      <a href="https://www.facebook.com/NuansaApp/" target="_blank"><img src="assets/img/svg-icons/facebook.svg" /></a>
+      </div>
+      <div class="menu-icos-item instagram">
+      <a href="http://instagram.com/NuansaApp" target="_blank"><img src="assets/img/svg-icons/instagram.svg" /></a>
+      </div>
+    </div>
+</div>
+  </script>
+
+  <script src="assets/js/app.min.js"></script>
+</body>
+</html>
